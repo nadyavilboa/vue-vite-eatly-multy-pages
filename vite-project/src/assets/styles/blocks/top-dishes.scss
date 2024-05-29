@@ -1,0 +1,225 @@
+.top-dishes {
+    padding: 85px 0 66px;
+    border-bottom: 1px solid $header-line;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: $graph;
+        text-align: center;
+        font-family: $poppins;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 59px;
+
+        .text-violet {
+            display: block;
+
+            @media (min-width: $big-tablet) {
+                display: inline;
+            }
+        }
+
+        @media (min-width: $big-tablet) {
+            font-size: 32px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 45px;
+            margin-bottom: 76px;
+        }
+    }
+
+    &__list {
+        margin: 0 auto 61px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @media (min-width: $big-tablet) {
+            margin: 0 0 61px;
+        }
+    }
+
+    &__item {
+        width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 17px 0 20px;
+        background: $white;
+        border-radius: 22px;
+        border: 1px solid $border-card;
+        box-shadow: 4px 54px 27px $box-shadow-rest;
+
+        & picture {
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        &:nth-child(n+4) {
+            display: none;
+        }
+
+        @media (min-width: $big-tablet) {
+            width: calc(20% - 12px);
+
+            &:nth-child(n+4) {
+                display: flex;
+            }
+        }
+    }
+
+    &__img {
+        margin: 0 auto 2px;
+        width: 120px;
+        height: auto;
+
+        &--big {
+            width: 131px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 200px;
+        }
+    }
+
+    &__btn-heart {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: min-content;
+        height: auto;
+        border: none;
+        background: transparent;
+
+        svg {
+            @media (min-width: $big-tablet) {
+                width: 16px;
+                height: 13px;
+            }
+
+            @media (min-width: $big-tablet) {
+                width: 22px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        margin-bottom: 8px;
+        margin-top: auto;
+    }
+
+    &__name {
+        color: $graph;
+        font-family: $poppins;
+        font-size: 15.08px;
+        font-weight: 600;
+        line-height: 160%;
+        text-decoration: none;
+
+        @media (min-width: $big-tablet) {
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 23px;
+        }
+    }
+
+    &__group-text {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $grey-time;
+        font-family: $manrope;
+        font-size: 15.384px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 12px;
+        }
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    &__price {
+        color: $grey-time;
+        font-family: $manrope;
+        font-size: 12.301px;
+        font-weight: 700;
+        line-height: 216%;
+
+        @media (min-width: $big-tablet) {
+            font-size: 13px;
+        }
+    }
+
+    &__big-price {
+        color: $graph;
+        font-size: 16.965px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 18px;
+        }
+    }
+
+    &__btn-plus {
+        border-radius: 6px;
+        background: $graph;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &:hover {
+            background: $violet-btn;
+        }
+
+        svg {
+            fill: $white;
+        }
+
+        @media (min-width: $big-tablet) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &::after {
+        @media (min-width: $desktop) {
+            content: '';
+            display: block;
+            width: calc(100vw - 97px * 2);
+            height: 1px;
+            background: $header-line;
+            position: absolute;
+            left: 97px;
+            bottom: 0;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        padding: 100px 0;
+        border: 1px solid transparent;
+    }
+}

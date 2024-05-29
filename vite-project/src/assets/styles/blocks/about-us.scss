@@ -1,0 +1,104 @@
+.about-us {
+    background: 
+        url(../assets/img/bg-1.png) no-repeat,
+        url(../assets/img/bg-2.png) no-repeat bottom right, 
+        $violet;
+    padding: 99px 36px 82px 45px;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: $big-tablet) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        padding: 60px 0;
+        border-bottom: 1px solid $about-us-line;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: $big-tablet) {
+            border-bottom: 1px solid transparent;
+            border-right: 1px solid $about-us-line-tablet;
+            padding: 0;
+            width: 30%;
+        }
+    }
+
+    &__item:first-child {
+        padding-top: 0;
+
+        @media (min-width: $big-tablet) {
+            padding: 0;
+        }
+    }
+
+    &__item:last-child {
+        padding-bottom: 0;
+        border-bottom: 1px solid transparent;
+
+        @media (min-width: $big-tablet) {
+            padding: 0;
+            border-right: 1px solid transparent;
+        }
+    }
+
+    &__number {
+        color: $white;
+        text-align: center;
+        font-family: $public;
+        font-size: 43.2px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 11px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 31px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 43px;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__text {
+        color: $light-grey-text;
+        text-align: center;
+        font-family: $inter;
+        font-size: 14.4px;
+        font-weight: 500;
+        line-height: 150%;
+
+        @media (min-width: $big-tablet) {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: $big-tablet) {
+        background: 
+            url(../assets/img/bg-1-tablet.png) no-repeat,
+            url(../assets/img/bg-2-tablet.png) no-repeat bottom right, 
+            $violet;
+        padding: 40px 36px 40px 45px;
+    }
+
+    @media (min-width: $desktop) {
+        background: 
+            url(../assets/img/bg-1-desktop.png) no-repeat,
+            url(../assets/img/bg-2-desktop.png) no-repeat bottom right, 
+        $violet;
+        padding: 57px 36px 55px 45px;
+    }
+}

@@ -1,0 +1,134 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+        justify-content: flex-start;
+    }
+
+    &__group {
+        margin: 0;
+        padding: 0;
+        border: none;
+        position: relative;
+        width: 70px;
+        height: 14px;
+        background: url('../assets/img/star-grey.png') repeat-x;
+        background-size: 14px auto;
+
+        @media (min-width: $big-tablet) {
+            width: 98px;
+            height: 15px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 138px;
+            height: 23px;
+            background: url('../assets/img/star-grey-desktop.png') repeat-x;
+            background-size: 23px auto;
+        }
+    }
+
+    &__star {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14px;
+        margin: 0;
+
+        &:nth-of-type(1) {
+            z-index: 5;
+            width: 14px;
+
+            @media (min-width: $desktop) {
+                width: 23px;
+            }
+        }
+
+        &:nth-of-type(2) {
+            z-index: 4;
+            width: 28px;
+
+            @media (min-width: $desktop) {
+                width: 46px;
+            }
+        }
+
+        &:nth-of-type(3) {
+            z-index: 3;
+            width: 42px;
+
+            @media (min-width: $desktop) {
+                width: 69px;
+            }
+        }
+
+        &:nth-of-type(4) {
+            z-index: 2;
+            width: 54px;
+
+            @media (min-width: $desktop) {
+                width: 92px;
+            }
+        }
+
+        &:nth-of-type(5) {
+            z-index: 1;
+            width: 70px;
+
+            @media (min-width: $desktop) {
+                width: 106px;
+            }
+        }
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:checked {
+            background: url('../assets/img/star-gold.png') repeat-x;
+            background-size: 14px auto;
+
+            @media (min-width: $desktop) {
+                background: url('../assets/img/star-gold-desktop.png') repeat-x;
+                background-size: 23px auto;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            height: 23px;
+        }
+    }
+
+    &__logo {
+        margin-right: 16px;
+    }
+
+    &__logo svg {
+        @media (min-width: $desktop) {
+            width: 123px;
+            height: 30px;
+        }
+    }
+
+    &__value {
+        margin-right: 7px;
+    }
+
+    &__number {
+        color: $rating-val; 
+        font-family: $jakarta;
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0.7;
+
+        @media (min-width: $desktop) {
+            font-size: 16px;
+        }
+    }
+}

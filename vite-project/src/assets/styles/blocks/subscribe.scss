@@ -1,0 +1,161 @@
+.subscribe {
+    padding: 35px 27px 95px;
+    border-radius: 15px;
+    background: $violet-btn;
+    opacity: 0.8;
+    width: 100%;
+    position: relative;
+    margin-bottom: 95px;
+
+    &__title {
+        text-align: center;
+        color: $white;
+        font-family: $poppins;
+        font-size: 41px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 50px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 70px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: $big-tablet) {
+            align-items: flex-start;
+            opacity: 0.9;
+        }
+    }
+
+    &__input-wrapper {
+        background: $white;
+        border-radius: 9px;
+        padding: 7px 7px 7px 10px;
+        display: flex;
+        gap: 20px;
+
+        @media (min-width: $big-tablet) {
+            padding: 5px 5px 5px 15px;
+        }
+
+        @media (min-width: $desktop) {
+            padding: 6px 6px 6px 22px;
+            border-radius: 14px;
+        }
+    }
+
+    &__input {
+        max-width: 100px;
+        border: none;
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+            border: none;
+        }
+
+        @media (min-width: $big-tablet) {
+            min-width: 200px;
+            max-width: 250px;
+        }
+    }
+
+    &__input,
+    &__input::placeholder {
+        color: $input;
+        font-family: $poppins;
+        font-size: 10.58px;
+        font-weight: 400;
+        letter-spacing: 0.317px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 11px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        padding: 10px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $violet-btn;
+        color: $white;
+        border: 0;
+        border-radius: 7px;
+
+        @media (min-width: $big-tablet) {
+            font-size: 10px;
+            text-transform: uppercase;
+            padding: 10px 18px;
+        }
+
+        @media (min-width: $desktop) {
+            padding: 16px 26px;
+            font-size: 15px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -27px;
+        bottom: -110px;
+        left: calc(50% - 84px);
+
+        @media (min-width: $big-tablet) {
+            left: initial;
+            right: 51px;
+            bottom: -44px;
+            width: 195px;
+            height: 196px;
+        }
+
+        @media (min-width: $desktop) {
+            right: 72px;
+            bottom: -60px;
+            width: 276px;
+            height: 276px;
+        }
+    }
+
+    @media (min-width: $big-tablet) {
+        background-image: url(../assets/img/get-price-tablet.png);
+        background-image: image-set(
+            url(../assets/img/get-price-tablet.webp) 1x,
+            url(../assets/img/get-price-tablet-@2x.webp) 2x,
+            url(../assets/img/get-price-tablet.png) 1x,
+            url(../assets/img/get-price-tablet-@2x.png) 2x,
+        );
+        background-repeat: repeat-x;
+        background-color: $violet-btn;
+        border-radius: 21px;
+        padding: 26px 46px 43px;
+    }
+
+    @media (min-width: $desktop) {
+        background-image: url(../assets/img/get-price-desktop.png);
+        background-image: image-set(
+            url(../assets/img/get-price-desktop.webp) 1x,
+            url(../assets/img/get-price-desktop-@2x.webp) 2x,
+            url(../assets/img/get-price-desktop.png) 1x,
+            url(../assets/img/get-price-desktop-@2x.png) 2x,
+        );
+        background-repeat: repeat-x;
+        background-color: $violet-btn;
+        width: calc(100% - 36px);
+        padding: 37px 66px 60px;
+        border-radius: 30px;
+    }
+}
