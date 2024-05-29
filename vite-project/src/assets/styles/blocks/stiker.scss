@@ -1,0 +1,27 @@
+.stiker {
+    border-radius: 4.3px;
+    padding: 2px 7px;
+    width: fit-content;
+    background: $bg-stiker;
+    color: $stiker-color;
+    font-family: $poppins;
+    font-size: 10px;
+
+    &--red {
+        background: $bg-red-stiker;
+        color: $stiker-red-color;
+    }
+
+    &--green {
+        background: $bg-green-stiker;
+        color: $stiker-green-color;
+    }
+
+    @media (min-width: $big-tablet) {
+        font-size: 9px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 13px;
+    }
+}

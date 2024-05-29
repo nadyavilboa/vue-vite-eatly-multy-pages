@@ -1,0 +1,55 @@
+.select {
+    height: min-content;
+    border-radius: 7px;
+    background: $bg-select;
+    padding: 7px 10px;
+
+    @media (min-width: $big-tablet) {
+        border-radius: 9px;
+        padding: 9px 13px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 12px 18px;
+    }
+}
+
+.select__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    color: $select;
+    text-align: right;
+    font-family: $manrope;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.372px;
+
+    & svg {
+        @media (min-width: $desktop) {
+            width: 12px;
+            height: 8px;
+        }
+    }
+
+    @media (min-width: $big-tablet) {
+        font-size: 13px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.select__list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: $white;
+}
+
+.select--open .select__list {
+    display: flex;
+}

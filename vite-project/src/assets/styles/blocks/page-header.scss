@@ -1,0 +1,48 @@
+.page-header {
+    padding: 33px 0 31px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: calc(100% - 30px);
+        height: 0.5px;
+        background: $header-line;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+
+        @media (min-width: $big-tablet) {
+            left: 70px;
+            width: calc(100% - 140px);
+        }
+
+        @media (min-width: $desktop) {
+            width: calc(100% - 200px);
+            left: 100px;
+        }
+    }
+
+    .page-header__navigation,
+    .page-header__auth {
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: flex;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 48px 0 25px;
+    }
+}
