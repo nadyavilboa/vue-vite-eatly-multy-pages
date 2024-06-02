@@ -14,18 +14,13 @@
         position: relative;
         width: 70px;
         height: 14px;
-        background: url('../assets/img/star-grey.png') repeat-x;
+        background: url('/img/star-grey.png') repeat-x;
         background-size: 14px auto;
 
-        @media (min-width: $big-tablet) {
-            width: 98px;
-            height: 15px;
-        }
-
         @media (min-width: $desktop) {
-            width: 138px;
+            width: 115px;
             height: 23px;
-            background: url('../assets/img/star-grey-desktop.png') repeat-x;
+            background: url('/img/star-grey-desktop.png') repeat-x;
             background-size: 23px auto;
         }
     }
@@ -81,7 +76,7 @@
             width: 70px;
 
             @media (min-width: $desktop) {
-                width: 106px;
+                width: 115px;
             }
         }
 
@@ -91,11 +86,11 @@
         }
 
         &:checked {
-            background: url('../assets/img/star-gold.png') repeat-x;
+            background: url('/img/star-gold.png') repeat-x;
             background-size: 14px auto;
 
             @media (min-width: $desktop) {
-                background: url('../assets/img/star-gold-desktop.png') repeat-x;
+                background: url('/img/star-gold-desktop.png') repeat-x;
                 background-size: 23px auto;
             }
         }

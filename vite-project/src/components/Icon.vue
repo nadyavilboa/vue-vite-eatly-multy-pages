@@ -16,6 +16,10 @@ export default {
     iconHeight: {
         type: String,
         required: false,
+    },
+    fill: {
+      type: String,
+      required: false
     }
   }
 };

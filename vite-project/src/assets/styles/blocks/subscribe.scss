@@ -131,12 +131,12 @@
     }
 
     @media (min-width: $big-tablet) {
-        background-image: url(../assets/img/get-price-tablet.png);
+        background-image: url(/img/get-price-tablet.png);
         background-image: image-set(
-            url(../assets/img/get-price-tablet.webp) 1x,
-            url(../assets/img/get-price-tablet-@2x.webp) 2x,
-            url(../assets/img/get-price-tablet.png) 1x,
-            url(../assets/img/get-price-tablet-@2x.png) 2x,
+            url(/img/get-price-tablet.webp) 1x,
+            url(/img/get-price-tablet-@2x.webp) 2x,
+            url(/img/get-price-tablet.png) 1x,
+            url(/img/get-price-tablet-@2x.png) 2x,
         );
         background-repeat: repeat-x;
         background-color: $violet-btn;
@@ -145,12 +145,12 @@
     }
 
     @media (min-width: $desktop) {
-        background-image: url(../assets/img/get-price-desktop.png);
+        background-image: url(/img/get-price-desktop.png);
         background-image: image-set(
-            url(../assets/img/get-price-desktop.webp) 1x,
-            url(../assets/img/get-price-desktop-@2x.webp) 2x,
-            url(../assets/img/get-price-desktop.png) 1x,
-            url(../assets/img/get-price-desktop-@2x.png) 2x,
+            url(/img/get-price-desktop.webp) 1x,
+            url(/img/get-price-desktop-@2x.webp) 2x,
+            url(/img/get-price-desktop.png) 1x,
+            url(/img/get-price-desktop-@2x.png) 2x,
         );
         background-repeat: repeat-x;
         background-color: $violet-btn;
