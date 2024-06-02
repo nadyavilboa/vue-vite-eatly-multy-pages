@@ -101,7 +101,7 @@
                 left: 100px;
                 width: 110px;
                 height: 62px;
-                background: url(../assets/img/bg-8-tablet.png) no-repeat;
+                background: url(/img/bg-8-tablet.png) no-repeat;
             }
         }
 
@@ -113,7 +113,7 @@
                 left: 150px;
                 height: 87px;
                 width: 154px;
-                background: url(../assets/img/bg-8-desktop.png) no-repeat;
+                background: url(/img/bg-8-desktop.png) no-repeat;
             }
         }
     }
@@ -129,7 +129,7 @@
             width: 57px;
             height: 101px;
             display: block;
-            background: url(../assets/img/bg-3.png) no-repeat;
+            background: url(/img/bg-3.png) no-repeat;
             background-size: contain;
             position: absolute;
             top: -110px;
@@ -150,7 +150,7 @@
             width: 29px;
             height: 34px;
             display: block;
-            background: url(../assets/img/bg-4.png) no-repeat;
+            background: url(/img/bg-4.png) no-repeat;
             background-size: contain;
             position: absolute;
             top: 0;
@@ -165,7 +165,7 @@
             @media (min-width: $big-tablet) {
                 width: 37px;
                 height: 44px;
-                background: url(../assets/img/bg-4-tablet.png) no-repeat;
+                background: url(/img/bg-4-tablet.png) no-repeat;
                 background-size: contain;
                 top: -11px;
                 right: -18%;
@@ -175,7 +175,7 @@
                 width: 52px;
                 height: 62px;
                 top: 0;
-                background: url(../assets/img/bg-4-desktop.png) no-repeat;
+                background: url(/img/bg-4-desktop.png) no-repeat;
                 background-size: contain;
             }
         }

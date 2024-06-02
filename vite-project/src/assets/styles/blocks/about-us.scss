@@ -1,7 +1,7 @@
 .about-us {
     background: 
-        url(../assets/img/bg-1.png) no-repeat,
-        url(../assets/img/bg-2.png) no-repeat bottom right, 
+        url(/img/bg-1.png) no-repeat,
+        url(/img/bg-2.png) no-repeat bottom right, 
         $violet;
     padding: 99px 36px 82px 45px;
 
@@ -88,16 +88,16 @@
 
     @media (min-width: $big-tablet) {
         background: 
-            url(../assets/img/bg-1-tablet.png) no-repeat,
-            url(../assets/img/bg-2-tablet.png) no-repeat bottom right, 
+            url(/img/bg-1-tablet.png) no-repeat,
+            url(/img/bg-2-tablet.png) no-repeat bottom right, 
             $violet;
         padding: 40px 36px 40px 45px;
     }
 
     @media (min-width: $desktop) {
         background: 
-            url(../assets/img/bg-1-desktop.png) no-repeat,
-            url(../assets/img/bg-2-desktop.png) no-repeat bottom right, 
+            url(/img/bg-1-desktop.png) no-repeat,
+            url(/img/bg-2-desktop.png) no-repeat bottom right, 
         $violet;
         padding: 57px 36px 55px 45px;
     }
