@@ -107,6 +107,10 @@
         padding-bottom: 32px;
         border-bottom: 1px solid $header-line;
 
+        & a {
+            text-decoration: none;
+        }
+
         @media (min-width: $big-tablet) {
             flex-direction: row;
             padding-bottom: 0;
@@ -129,7 +133,8 @@
         text-decoration: none;
         transition: all 0.3s ease-in;
 
-        &:hover {
+        &:hover,
+        &--active {
             color: $black;
             border-bottom: 1px solid $black;
         }

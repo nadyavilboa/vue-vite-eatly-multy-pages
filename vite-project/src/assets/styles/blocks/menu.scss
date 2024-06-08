@@ -11,6 +11,10 @@
     padding: 30px 30px 110px 30px;
     z-index: 10;
 
+    & a {
+        text-decoration: none;
+    }
+
     &__btn-close {
         display: none;
         z-index: 10;
@@ -41,7 +45,8 @@
             display: none;
         }
 
-        &:hover {
+        &:hover,
+        &--active {
             color: $black;
             border-bottom: 1px solid $black;
         }
@@ -52,7 +57,8 @@
             font-weight: 500;
             color: $footer-menu;
 
-            &:hover {
+            &:hover,
+            &--active {
                 border-bottom: none;
             }
 
@@ -61,7 +67,8 @@
                 transition: all ease-out 0.2s;
             }
 
-            &:hover::after {
+            &:hover::after,
+            &--active::after {
                 width: 100%;
             }
         }
@@ -80,6 +87,10 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+
+        & a {
+            text-decoration: none;
+        }
 
         @media (min-width: $tablet) {
             display: flex;
@@ -100,7 +111,8 @@
         border: 1px solid $violet-btn;
         transition: all 0.3s ease-in;
 
-        &:hover {
+        &:hover,
+        &--active {
             color: $violet-btn;
         }
 
@@ -109,6 +121,10 @@
             border: 1px solid transparent;
             color: $footer-menu;
             font-weight: 700;
+
+            &--active {
+                color: $violet-btn;
+            }
         }
     }
 
@@ -117,7 +133,8 @@
         color: $white;
         transition: all 0.3s ease-in;
 
-        &:hover {
+        &:hover,
+        &.active {
             background: $progress-bar-orange-val;
             color: $black;
         }
