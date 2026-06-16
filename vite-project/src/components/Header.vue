@@ -5,9 +5,22 @@ export default {
     components: {
         Icon
     },
+    data() {
+        return {
+            isMobileMenuOpen: false
+        }
+    },
     computed: {
         url() {
             return window.location.pathname;
+        },
+        isMobile () {
+            return window.innerWidth < 768;
+        },
+    },
+    methods: {
+        toggleMobileMenu () {
+            this.isMobileMenuOpen = !this.isMobileMenuOpen;
         }
     }
 }
@@ -24,7 +37,7 @@ export default {
                     <Icon iconClass="page-header__logo-icon" iconName="logo" iconWidth="112" iconHeight="42" />
                 </span>
             </router-link>
-            <nav class="page-header__navigation menu">
+            <nav class="page-header__navigation menu" :class="{'menu--open': this.isMobileMenuOpen}">
                 <router-link :to="{ path: '/menu'}" target="_blank">
                     <span class="menu__link" :class="this.url == '/menu' ? 'menu__link--active' : ''">
                         Menu
@@ -46,10 +59,10 @@ export default {
                     </span>
                 </router-link>
             </nav>
-            <button class="menu__btn-close">
+            <button class="menu__btn-close" @click="toggleMobileMenu">
                 <Icon iconName="close" iconWidth="32" iconHeight="32" />
             </button>
-            <button class="page-header__menu-toggle burger">
+            <button class="page-header__menu-toggle burger" @click="toggleMobileMenu">
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
