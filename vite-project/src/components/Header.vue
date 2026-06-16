@@ -7,7 +7,8 @@ export default {
     },
     data() {
         return {
-            isMobileMenuOpen: false
+            isMobileMenuOpen: false,
+            isNotSign: false,
         }
     },
     computed: {
@@ -21,7 +22,13 @@ export default {
     methods: {
         toggleMobileMenu () {
             this.isMobileMenuOpen = !this.isMobileMenuOpen;
-        }
+        },
+        checkSign() {
+            this.isNotSign = this.url != '/login' && this.url != '/signup' && this.url != '/forgetpass';
+        },
+    },
+    created() {
+        this.checkSign();
     }
 }
 </script>
@@ -29,7 +36,7 @@ export default {
 <template>
     <header class="page-header">
         <div class="page-header__wrapper container">
-            <router-link :to="{ path: '/'}" target="_blank">
+            <router-link :to="{ path: '/'}">
                 <span class="page-header__logo">
                     <span class="visually-hidden">
                         Eatly Logotype
@@ -37,43 +44,43 @@ export default {
                     <Icon iconClass="page-header__logo-icon" iconName="logo" iconWidth="112" iconHeight="42" />
                 </span>
             </router-link>
-            <nav class="page-header__navigation menu" :class="{'menu--open': this.isMobileMenuOpen}">
-                <router-link :to="{ path: '/menu'}" target="_blank">
+            <nav class="page-header__navigation menu" :class="{'menu--open': this.isMobileMenuOpen}" v-if="this.isNotSign">
+                <router-link :to="{ path: '/menu'}">
                     <span class="menu__link" :class="this.url == '/menu' ? 'menu__link--active' : ''">
                         Menu
                     </span>
                 </router-link>
-                <router-link :to="{ path: '/blog'}" target="_blank">
+                <router-link :to="{ path: '/blog'}">
                     <span class="menu__link" :class="this.url == '/blog' ? 'menu__link--active' : ''">
                         Blog
                     </span>
                 </router-link>
-                <router-link :to="{ path: '/pricing'}" target="_blank">
+                <router-link :to="{ path: '/pricing'}">
                     <span class="menu__link" :class="this.url == '/pricing' ? 'menu__link--active' : ''">
                         Pricing
                     </span>
                 </router-link>
-                <router-link :to="{ path: '/contact'}" target="_blank">
+                <router-link :to="{ path: '/contact'}">
                     <span class="menu__link" :class="this.url == '/contact' ? 'menu__link--active' : ''">
                         Contact
                     </span>
                 </router-link>
             </nav>
-            <button class="menu__btn-close" @click="toggleMobileMenu">
+            <button class="menu__btn-close" v-if="this.isNotSign" @click="toggleMobileMenu">
                 <Icon iconName="close" iconWidth="32" iconHeight="32" />
             </button>
-            <button class="page-header__menu-toggle burger" @click="toggleMobileMenu">
+            <button class="page-header__menu-toggle burger" v-if="this.isNotSign" @click="toggleMobileMenu">
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
             </button>
-            <div class="page-header__auth menu--auth">
-                <router-link :to="{ path: '/login'}" target="_blank">
+            <div class="page-header__auth menu--auth" v-if="this.isNotSign">
+                <router-link :to="{ path: '/login'}" >
                     <span class="menu__auth-link btn" :class="this.url == '/login' ? 'menu__auth-link--active' : ''">
                         Login
                     </span>
                 </router-link>
-                <router-link :to="{ path: '/signup'}" target="_blank">
+                <router-link :to="{ path: '/signup'}" >
                     <span class="menu__auth-link menu__auth-link--sign-up btn" :class="this.url == '/signup' ? 'active' : ''">
                         Sign Up
                     </span>

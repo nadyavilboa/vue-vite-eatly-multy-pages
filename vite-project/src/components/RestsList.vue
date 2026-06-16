@@ -33,7 +33,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-rests__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             The Chicken King
                         </a>
@@ -71,7 +71,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-rests__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             The Burger King
                         </a>
@@ -109,7 +109,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-rests__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             The Burger King
                         </a>
@@ -129,7 +129,7 @@ import Icon from './../components/Icon.vue';
             <a
                 class="top-rests__full-link full-link"
                 href="#"
-                target="_blank"
+                
             >
                 <span class="top-rests__text-link">View All</span>
                 <Icon iconName="arrow-full-link" iconWidth="16" iconHeight="16" />

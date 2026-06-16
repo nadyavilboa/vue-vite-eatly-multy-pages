@@ -21,7 +21,7 @@
                         <a
                             class="control__link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <picture>
                                 <source type="image/webp" media="(min-width: 1280px)" srcset="./../assets/img/food-desktop-6.webp 1x, ./../assets/img/food-desktop-6-@2x.webp 2x">
@@ -50,7 +50,7 @@
                         <a
                             class="control__link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <picture>
                                 <source type="image/webp" media="(min-width: 1280px)" srcset="./../assets/img/food-desktop-7.webp 1x, ./../assets/img/food-desktop-7-@2x.webp 2x">
@@ -79,7 +79,7 @@
                         <a
                             class="control__link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <picture>
                                 <source type="image/webp" media="(min-width: 1280px)" srcset="./../assets/img/food-desktop-7.webp 1x, ./../assets/img/food-desktop-7-@2x.webp 2x">

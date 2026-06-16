@@ -36,7 +36,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-dishes__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             Chicken Hell
                         </a>
@@ -83,7 +83,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-dishes__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             Swe Dish
                         </a>
@@ -130,7 +130,7 @@ import Icon from './../components/Icon.vue';
                         <a 
                             class="top-dishes__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             Swe Dish
                         </a>
@@ -177,7 +177,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-dishes__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             Chicken Hell
                         </a>
@@ -224,7 +224,7 @@ import Icon from './../components/Icon.vue';
                         <a
                             class="top-dishes__name"
                             href="#"
-                            target="_blank"
+                            
                         >
                             Swe Dish
                         </a>
@@ -250,7 +250,7 @@ import Icon from './../components/Icon.vue';
             <a
                 class="top-dishes__full-link full-link"
                 href="#"
-                target="_blank"
+                
             >
                 <span class="top-dishes__text-link">View All</span>
                 <Icon :iconName="'arrow-full-link'" iconWidth="16" iconHeight="16" />

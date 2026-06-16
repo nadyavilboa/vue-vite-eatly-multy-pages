@@ -9,5 +9,4 @@ import Footer from './../components/Footer.vue';
       <h1 class="page-title visually-hidden">Eatly - Forgot Password</h1>
       Forgot Password
     </main>
-    <Footer />
 </template>

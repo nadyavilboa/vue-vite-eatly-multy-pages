@@ -35,14 +35,14 @@ import Subscribe from '../components/Subscribe.vue';
                   <a
                       class="banner__btn btn btn-violet"
                       href="#"
-                      target="_blank"
+                      
                   >
                       Get Started
                   </a>
                   <a
                       class="banner__btn btn btn-border"
                       href="#"
-                      target="_blank"
+                      
                   >
                       Go Pro
                   </a>

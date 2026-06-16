@@ -17,7 +17,7 @@ export default {
     <footer class="page-footer">
         <div class="page-footer__wrapper container">
             <div class="page-footer__top">
-                <router-link :to="{ path: '/'}" target="_blank">
+                <router-link :to="{ path: '/'}" >
                     <span class="page-footer__logo page-footer__logo--mobile">
                         <span class="visually-hidden">
                             Eatly Logotype
@@ -33,28 +33,28 @@ export default {
                         <a
                             class="page-footer__social-link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <Icon iconName="instagram" iconWidth="16" iconHeight="16" />
                         </a>
                         <a
                             class="page-footer__social-link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <Icon iconName="linkedin" iconWidth="16" iconHeight="15" />
                         </a>
                         <a
                             class="page-footer__social-link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <Icon iconName="facebook" iconWidth="7" iconHeight="16" />
                         </a>
                         <a
                             class="page-footer__social-link"
                             href="#"
-                            target="_blank"
+                            
                         >
                             <Icon iconName="twitter" iconWidth="16" iconHeight="13" />
                         </a>
@@ -62,7 +62,7 @@ export default {
                 </span>
             </div>
             <div class="page-footer__wrapper--bottom">
-                <router-link :to="{ path: '/'}" target="_blank">
+                <router-link :to="{ path: '/'}" >
                     <span class="page-footer__logo page-footer__logo--tablet">
                         <span class="visually-hidden">
                             Eatly Logotype
@@ -72,28 +72,28 @@ export default {
                 </router-link>
                 <ul class="page-footer__menu">
                     <li class="page-footer__menu-item">
-                        <router-link :to="{ path: '/blog'}" target="_blank">
+                        <router-link :to="{ path: '/blog'}" >
                             <span class="page-footer__menu-link" :class="this.url == '/blog' ? 'page-footer__menu-link--active' : ''">
                                 Blog
                             </span>
                         </router-link>
                     </li>
                     <li class="page-footer__menu-item">
-                        <router-link :to="{ path: '/pricing'}" target="_blank">
+                        <router-link :to="{ path: '/pricing'}" >
                             <span class="page-footer__menu-link" :class="this.url == '/pricing' ? 'page-footer__menu-link--active' : ''">
                                 Pricing
                             </span>
                         </router-link>
                     </li>
                     <li class="page-footer__menu-item">
-                        <router-link :to="{ path: '/pricing'}" target="_blank">
+                        <router-link :to="{ path: '/pricing'}" >
                             <span class="page-footer__menu-link" :class="this.url == '/aboutus' ? 'page-footer__menu-link--active' : ''">
                                 About Us
                             </span>
                         </router-link>
                     </li>
                     <li class="page-footer__menu-item"> 
-                        <router-link :to="{ path: '/pricing'}" target="_blank">
+                        <router-link :to="{ path: '/pricing'}" >
                             <span class="page-footer__menu-link" :class="this.url == '/contact' ? 'page-footer__menu-link--active' : ''">
                                 Contact
                             </span>
