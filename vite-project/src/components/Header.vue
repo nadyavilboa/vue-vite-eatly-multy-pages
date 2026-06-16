@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-    <header class="page-header">
+    <header class="page-header" :class="{'with-bottom-border': this.isNotSign}">
         <div class="page-header__wrapper container">
             <router-link :to="{ path: '/'}">
                 <span class="page-header__logo">

@@ -9,7 +9,9 @@ import Header from './../components/Header.vue';
       <section class="banner">
         <div class="container">
           <div class="banner__content">
-            <h2>Sign In to eatly</h2>
+            <h2 class="banner__title">
+              <span class="text-form">Sign In to eatly</span>
+            </h2>
             <div class="buttons-login"></div>
             <p>or</p>
             <div class="form">

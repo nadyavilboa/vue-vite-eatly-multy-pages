@@ -2,7 +2,7 @@
     padding: 33px 0 31px;
     position: relative;
 
-    &::after {
+    &.with-bottom-border::after {
         content: '';
         display: block;
         width: calc(100% - 30px);
