@@ -16,6 +16,13 @@
         }
     }
 
+    .container--auth {
+        @media (min-width: $tablet) { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
     &__content {
         margin-bottom: 72px;
 
@@ -147,6 +154,32 @@
 
         @media (min-width: $tablet) {
             justify-content: flex-start;
+        }
+    }
+
+    &__graphics-wrapper {
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: block;
+            position: relative;
+            min-height: 100%;
+        }
+    }
+
+    &__graphics-wrapper::before {
+        display: none;
+        
+        @media (min-width: $tablet) {
+            content: '';
+            position: absolute;
+            top: -215px;
+            right: -100px;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: auto;
+            background-color: $violet-btn;
         }
     }
 

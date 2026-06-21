@@ -1,4 +1,6 @@
-# vue-vite-eatly-multy-pages - многостраничный сайт ресторана
+# vue-vite-eatly-multy-pages - 
+
+<h2>Многостраничный сайт ресторана</h2>
 
 <p>Порядок установки:</p>
 <ul>
