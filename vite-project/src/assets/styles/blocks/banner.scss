@@ -19,6 +19,10 @@
     &__content {
         margin-bottom: 72px;
 
+        &--form {
+            margin: auto;
+        }
+
         @media (min-width: $tablet) {
             width: 50%;
             margin-bottom: 0;
